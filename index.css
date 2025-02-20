@@ -13,7 +13,7 @@
   --clr-green-700: 158 42% 18%;
 
   /* font-size */
-  --fs-800: 2rem;
+  --fs-800: 2rem; /*32px*/
   --fs-300: 0.875rem; /*14px*/
   --fs-200: 0.8125rem; /*13px*/
   --fs-100: 0.75rem; /*12px*/
@@ -48,7 +48,8 @@
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
-  color: var(--clr-grey);
+  color: hsl(var(--clr-grey));
+  font-weight: 500;
   background-color: hsl(var(--clr-cream));
 
   line-height: var(--lh-160);
@@ -74,6 +75,71 @@ h1 {
   overflow-wrap: break-word;
 }
 
+/*=======================
+ * UTILITY CLASSES
+ *========================**/
+
+/* general */
 .grid {
   display: grid;
+}
+
+/* bg-color */
+.bg-cream {
+  background-color: hsl(var(--clr-cream));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+.bg-green-500 {
+  background-color: hsl(var(--clr-green-500));
+}
+.bg-green-700 {
+  background-color: hsl(var(--clr-green-700));
+}
+
+/* text-color */
+.black {
+  color: hsl(var(--clr-black));
+}
+
+.white {
+  color: hsl(var(--clr-white));
+}
+
+.green-500 {
+  color: hsl(var(--clr-green-500));
+}
+
+/* font */
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+
+.fs-100,
+.fs-200 {
+  line-height: 1.2;
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+  letter-spacing: 5px;
+}
+
+.fs-300,
+.fs-300-bold {
+  font-size: var(--fs-300);
+}
+
+.fs-300-bold,
+.fs-800-bold {
+  font-weight: bold;
+}
+
+.fs-800-bold {
+  font-size: var(--fs-800);
 }
