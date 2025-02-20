@@ -21,4 +21,59 @@
   /* font-family */
   --ff-primary: "Montserrat", sans-serif;
   --ff-accent: "Fraunces", serif;
+
+  /* line-height */
+  --lh-100: 1; /* 100% */
+  --lh-110: 1.1; /* 110% */
+  --lh-120: 1.2; /* 120% */
+  --lh-160: 1.6; /* 160% */
+}
+
+/*=======================
+ * RESET
+ * ref: https://www.joshwcomeau.com/css/custom-css-reset/
+ *========================**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  color: var(--clr-grey);
+  background-color: hsl(var(--clr-cream));
+
+  line-height: var(--lh-160);
+  min-height: 100dvh;
+
+  /* centers the card horizontally */
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+img {
+  /* https://www.youtube.com/watch?v=345V2MU3E_w */
+  font-style: italic;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* avoid text overflows */
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+.grid {
+  display: grid;
 }
