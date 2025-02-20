@@ -1,0 +1,24 @@
+/*=======================
+ * CUSTOM PROPERTIES
+ *========================**/
+:root {
+  /*colors */
+  --clr-grey: 228 12% 48%;
+  --clr-black: 212 21% 14%;
+
+  --clr-white: 0 0% 100%;
+  --clr-cream: 30 38% 92%;
+
+  --clr-green-500: 158 36% 37%;
+  --clr-green-700: 158 42% 18%;
+
+  /* font-size */
+  --fs-800: 2rem;
+  --fs-300: 0.875rem; /*14px*/
+  --fs-200: 0.8125rem; /*13px*/
+  --fs-100: 0.75rem; /*12px*/
+
+  /* font-family */
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-accent: "Fraunces", serif;
+}
