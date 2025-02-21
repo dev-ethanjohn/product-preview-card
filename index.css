@@ -162,6 +162,7 @@ h1 {
   background-color: hsl(var(--clr-white));
   border-radius: 0.5rem;
   margin-block: 5rem;
+  margin-inline: 0.5rem;
   overflow: hidden;
 }
 
@@ -203,6 +204,11 @@ h1 {
   justify-content: center;
   border: none;
   cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: hsl(var(--clr-green-700));
 }
 
 .icon-cart {
