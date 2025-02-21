@@ -165,29 +165,6 @@ h1 {
   overflow: hidden;
 }
 
-@media (min-width: 23.43753em) {
-  .product-image img {
-    height: 21.375rem;
-    width: 100%;
-    /* center 10% downwards */
-    object-position: center 10%;
-    object-fit: cover;
-  }
-}
-
-@media (min-width: 48em) {
-  .product-card {
-    max-width: 37.5rem;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-  }
-
-  .product-image img {
-    width: auto;
-    height: 100%;
-  }
-}
-
 .product-info {
   --gap: 1.5rem;
   row-gap: var(--gap);
@@ -231,4 +208,28 @@ h1 {
 .icon-cart {
   height: 1rem;
   width: 1rem;
+}
+
+/* media queries */
+@media (min-width: 23.43753em) {
+  .product-image img {
+    height: 21.375rem;
+    width: 100%;
+    /* center 10% downwards */
+    object-position: center 10%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 48em) {
+  .product-card {
+    max-width: 37.5rem;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+  }
+
+  .product-image img {
+    width: auto;
+    height: 100%;
+  }
 }
