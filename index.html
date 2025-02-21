@@ -22,22 +22,23 @@
 
 <body class="grid">
   <main>
-    <article>
-      <picture>
-        <source media="(min-width: 80rem)" srcset="/images/image-product-desktop.jpg" sizes="">
-        <img src="/images/image-product-mobile.jpg" alt="Chanel Gabriele perfume">
+    <article class="product-card grid">
+      <picture class="product-image">
+        <source media="(min-width: 35rem)" srcset="/images/image-product-desktop.jpg" sizes="">
+        <img src="/images/image-product-mobile.jpg"
+          alt="Bottle of Chanel Gabrielle Essence Eau De Parfum on a floral background">
       </picture>
-      <div>
-        <header>
-          <p>
+      <div class="product-info grid">
+        <header class="product-details grid">
+          <p class="tag">
             Perfume
           </p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <h1 class="product-title ff-accent fs-800-bold black">Gabrielle Essence Eau De Parfum</h1>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
         </header>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-          Perfumer-Creator for the House of CHANEL.</p>
-        <p><span>$149.99</span>$169.99</p>
-        <button>Add to Cart</button>
+        <p class="price"><span class="current-price">$149.99</span><span class="original-price">$169.99</span></p>
+        <button class="bg-green-500 white add-to-cart">Add to Cart</button>
       </div>
     </article>
   </main>

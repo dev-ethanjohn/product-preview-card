@@ -52,6 +52,7 @@ body {
   font-weight: 500;
   background-color: hsl(var(--clr-cream));
 
+  /* align-items: center; */
   line-height: var(--lh-160);
   min-height: 100dvh;
 
@@ -142,4 +143,33 @@ h1 {
 
 .fs-800-bold {
   font-size: var(--fs-800);
+}
+
+/*=======================
+ * COMPONENTS
+ *========================**/
+.product-card {
+  max-width: 21.875rem;
+  background-color: hsl(var(--clr-white));
+  border-radius: 0.5rem;
+  margin-block-start: 5rem;
+}
+
+.product-info {
+  --gap: 1.5rem;
+  row-gap: var(--gap);
+  padding: 2rem;
+}
+
+.product-details {
+  row-gap: var(--gap);
+}
+
+.product-title {
+  line-height: 1;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: var(--fs-100);
 }
